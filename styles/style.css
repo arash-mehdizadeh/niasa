@@ -1,0 +1,457 @@
+body {
+    direction: rtl !important;
+    font-family: yekanbakh;
+    font-weight: normal;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0;
+    /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] , input[type=text] {
+    -moz-appearance: textfield;
+    border-color: inherit;
+    /* Firefox */
+}
+
+.container-custom {
+    width: 1312px;
+    margin: 0 auto;
+}
+
+.btn-hero {
+    width: 155px;
+    height: 76px;
+}
+
+.btn-style-1 {
+    background: radial-gradient(210.56% 198.03% at -8.19% -65.79%, #5282FD 0%, #0034B8 100%) !important;
+    border-radius: 20px;
+    box-shadow: 0px 37px 50px rgba(0, 51, 255, 0.18);
+    color: white;
+    line-height: 76px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;;
+}
+.btn-style-1:hover{
+    box-shadow: none;
+    transition: box-shadow 0.4s;
+}
+
+.btn-style-2 {
+    background: #F1F1F1;
+    border-radius: 20px;
+    color: black;
+    line-height: 76px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card-style-1 {
+    width: 303px;
+    height: 300px;
+    background: #FFFFFF;
+
+    outline: 1px solid #EAEAEA;
+    border-radius: 20px;
+    padding-top: 32px;
+    padding-right: 24px;
+    padding-left: 24px;
+    text-align: justify;
+    border: 3px solid #fff;
+}
+
+.card-style-1 p {
+    line-height: 22px;
+}
+
+.card-style-1:hover {
+    border: 3px solid #0C34D3;
+    transition: all ease-in-out 0.1s;
+}
+
+.card-style-1:hover .service-hover {
+    opacity: 1;
+    transition: all .3s ease-out;
+
+}
+
+.card-style-1 .service-hover {
+    background: linear-gradient(159.78deg, #3E65FF 13.46%, #061D7B 102.72%);
+    box-shadow: 0px 20px 38px rgba(109, 138, 255, 0.32);
+    border-radius: 45px;
+    transition: all .3s ease-out;
+}
+
+.resume-btn {
+    background: #F3F3F3;
+    padding: 8px 24px;
+    border-radius: 31px;
+}
+
+.active-resume-btn {
+    background: radial-gradient(210.56% 198.03% at -8.19% -65.79%, #5282FD 0%, #0034B8 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
+    box-shadow: 0px 16px 50px rgba(0, 51, 255, 0.18);
+    color: white;
+}
+
+.process-tab {
+    width: 260px;
+    height: 66px;
+    margin-top: 6px;
+    border-radius: 20px;
+    padding-right: 20px;
+}
+
+.process-tab span:first-child {
+    color: rgba(0, 0, 0, 0.4) !important;
+    line-height: 70px;
+}
+
+.process-active {
+    background: radial-gradient(210.56% 198.03% at -8.19% -65.79%, #5282FD 0%, #0034B8 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
+    box-shadow: 0px 37px 50px rgba(0, 51, 255, 0.18);
+    color: white;
+}
+
+.process-active span:first-child {
+    color: rgba(255, 255, 255, 0.4);
+    line-height: 70px;
+}
+
+.collapse-box {
+    width: 984px;
+    height: 357px;
+    background: #F5F5F5;
+    border-radius: 15px;
+
+}
+
+.active-testimonials {
+    background: radial-gradient(209.19% 157.84% at 14.84% -45.1%, #2260FF 0%, #001342 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+        , #F4F4F4;
+    box-shadow: 0px 57px 82px rgba(0, 25, 125, 0.16);
+    color: white;
+    font-size: 18px;
+    line-height: 180%;
+}
+
+.active-sec-testimonials {
+    border-style: linear-gradient(146.76deg, #0929A7 -12.55%, #FFFFFF 116.83%);
+    font-size: 18px;
+    line-height: 180%;
+}
+
+.active-prim-testimonials {
+    background: #F4F4F4;
+    border: #F4F4F4;
+    font-size: 18px;
+    line-height: 180%;
+}
+
+#partners .owl-theme .owl-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 2px;
+    margin-top: 0 !important;
+    width: 100%;
+    font-family: Tahoma;
+    font-size: 34px;
+}
+
+#partners .owl-prev,
+.owl-next {
+    border: 1px solid #DDDDDD !important;
+    border-radius: 47px !important;
+    width: 76px !important;
+    height: 76px !important;
+
+    background: white !important;
+    position: relative;
+}
+
+#partners .owl-prev {
+    border: 1px solid #DDDDDD !important;
+    border-radius: 47px !important;
+    width: 76px !important;
+
+    height: 76px !important;
+    background: white !important;
+    margin-right: 12px !important;
+    position: relative;
+}
+
+#partners .owl-prev span {
+    position: absolute;
+    bottom: 14px;
+    left: 32px;
+}
+
+#partners .owl-next {
+
+    margin-left: 12px !important;
+
+}
+
+#partners .owl-next span {
+    position: absolute;
+    bottom: 14px;
+    right: 32px;
+}
+
+#partners .owl-stage-outer {
+    width: 1056px !important;
+    height: 80px !important;
+    margin: 0 auto !important;
+    margin-top: 6px !important;
+    padding: 0 75px !important;
+    margin-left: 114px !important;
+}
+
+#partners .owl-item {
+    width: 124px !important;
+    height: 80px !important;
+    margin-right: 27px !important;
+    align-items: center !important;
+
+}
+
+#partners .owl-custom-item {
+    width: 100%;
+    height: 100%;
+
+    margin-top: 9px;
+
+}
+
+#partners .owl-picture {
+    height: 64px;
+    width: 64px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+#partners .owl-next:hover,
+#partners .owl-prev:hover {
+    background: radial-gradient(210.56% 198.03% at -8.19% -65.79%, #5282FD 0%, #0034B8 100%) !important;
+    box-shadow: 0px 37px 50px rgba(0, 51, 255, 0.18);
+    border-radius: 50px;
+}
+
+.blog-btn {
+    background: #232323;
+    padding: 8px 24px;
+    border-radius: 31px;
+    color: white;
+    font-weight: 500;
+}
+
+.active-blog-btn {
+    background: radial-gradient(210.56% 198.03% at -8.19% -65.79%, #5282FD 0%, #0034B8 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
+    box-shadow: 0px 16px 50px rgba(0, 51, 255, 0.18);
+    color: white;
+}
+
+#blog .owl-theme .owl-nav {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    position: absolute;
+    top: -108px;
+    margin-top: 0 !important;
+    width: 100%;
+    font-family: Tahoma;
+    font-size: 34px;
+    left: -17px;
+}
+
+#blog .owl-prev,
+#blog .owl-next {
+    border-radius: 47px !important;
+    width: 76px !important;
+    height: 76px !important;
+
+    position: relative;
+    background: #232323 !important;
+    color: white;
+    border: none !important;
+    box-shadow: 0px 36px 50px rgba(0, 51, 255, 0.18);
+}
+
+#blog .owl-prev {
+    margin-right: 12px !important;
+}
+
+#blog .owl-prev span {
+    position: absolute;
+    bottom: 14px;
+    left: 32px;
+}
+
+#blog .owl-next {
+    margin-left: 12px !important;
+
+}
+
+#blog .owl-next span {
+    position: absolute;
+    bottom: 14px;
+    right: 32px;
+}
+
+#blog .owl-stage-outer {
+    margin-top: 38px;
+    height: 400px;
+}
+
+#blog .owl-item {
+
+    margin-right: 24px !important;
+    align-items: center !important;
+    width: 421px !important;
+    height: 394px !important;
+}
+
+#blog .owl-custom-item {
+    width: 100%;
+    height: 100%;
+
+
+
+}
+
+#blog .owl-picture {
+    height: auto;
+
+}
+
+#blog .owl-next:hover,
+#blog .owl-prev:hover {
+    background: radial-gradient(210.56% 198.03% at -8.19% -65.79%, #5282FD 0%, #0034B8 100%) !important;
+    box-shadow: 0px 37px 50px rgba(0, 51, 255, 0.18);
+    border-radius: 50px;
+
+}
+
+.accordion-title-faq {
+    width: 725px;
+    height: 86px;
+    background: #F7F7F7;
+    border-radius: 20px;
+}
+
+#contact .form-control {
+    width: 651px !important;
+    height: 76px !important;
+    padding-right: 31px;
+
+}
+
+#contact label {
+    padding: 0 !important;
+    padding-right: 33px !important;
+    padding-top: 24px !important;
+
+}
+
+#contact .form-floating>.form-control:focus~label,
+.form-floating>.form-control:not(:placeholder-shown)~label,
+.form-floating>.form-select~label {
+    padding: 0 !important;
+    padding-top: 24px !important;
+    margin-left: 90px !important;
+
+}
+
+#contact .custom-contact-btn {
+    width: 317.5px;
+    height: 76px;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+#contact .custom-contact-active-btn {
+    width: 651px;
+    height: 76px;
+
+    background: radial-gradient(210.56% 198.03% at -8.19% -65.79%, #5282FD 0%, #0034B8 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
+    box-shadow: 0px 37px 50px rgba(0, 51, 255, 0.18);
+    border-radius: 20px;
+    color: white;
+}
+
+.news-btn {
+
+
+    background: radial-gradient(210.56% 198.03% at -8.19% -65.79%, #5282FD 0%, #0034B8 100%);
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    box-shadow: 0px 37px 50px rgba(0, 51, 255, 0.18);
+    border-radius: 20px;
+    color: white;
+
+}
+
+.drop-shadow--custom:hover {
+    box-shadow: 0px 67.3486px 105.309px rgba(0, 0, 0, 0.07);
+}
+
+
+.drop-shadow--categories {
+    box-shadow: 0px 0px 117px rgba(0, 0, 0, 0.1);
+}
+
+.bg-categories {
+    position: relative;
+    width: 796px;
+    height: 152px;
+    right: 20%;
+    top: 200px;
+    background: linear-gradient(182.1deg, #DCDCDC -75.21%, #FFFFFF 106.31%);
+    border-radius: 30px;
+}
+
+.header {
+    box-shadow: 0px 67.3486px 105.309px rgba(0, 0, 0, 0.07);
+}
+.background-layer--progress-path{
+    position: relative;
+    margin: 0px !important;
+    left: -10%;
+    display: unset !important;
+}
+
+.split-bg{
+    background: linear-gradient(to bottom, #030304 50%, #fff 50%);
+}
+
+.hover-images{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)) 
+}
+
+.hero--drop-shadow{
+    box-shadow: 0px 67.3486px 105.309px rgba(0, 0, 0, 0.07) !important;
+}
+
+

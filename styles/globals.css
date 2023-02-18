@@ -1,0 +1,102 @@
+@import url('https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  @apply px-7 py-3 inline-flex text-white rounded-lg items-center justify-center;
+}
+
+.btn-primary {
+  @apply bg-blue-700 text-white;
+}
+
+.btn-white {
+  @apply bg-white text-blue-700;
+}
+
+.btn-lg {
+  @apply px-12 py-4;
+}
+
+.input-field{
+    @apply  w-2/4 block font-semibold text-gray-700 bg-white bg-clip-padding border border-solid  transition ease-in-out m-0 focus:text-gray-700 border-[#dddddd] focus:bg-white focus:border-blue-600 focus:outline-none ;
+}
+
+.btn-style-3{
+    @apply rounded-[1.25rem] bg-[#232323] text-white px-8 py-6 font-bold text-[18px]
+}
+@layer components{
+    .wsm--bg-categories{
+        /* background-color:  linear-gradient(182.1deg, #DCDCDC -75.21%, #FFFFFF 106.31%) !important; */
+        background: linear-gradient(182.1deg, #DCDCDC -75.21%, #FFFFFF 106.31%);
+        background-size: 264px 90%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .drop-shadow--wsm {
+        box-shadow: 0px 67.3486px 105.309px rgba(0, 0, 0, 0.07);
+    }
+    .bg--dot-path-wsm{
+        background-position: 83.5%;
+        background-size:1% 79%
+    }
+
+    .image {
+        object-fit: contain;
+        width: 100% !important;
+        position: relative !important;
+        height: unset !important;
+    } 
+    
+    .filter--inherit{
+        filter: inherit;
+    }
+    .plus-btn {
+        color: #000;
+        background: #fff;
+        width: 40px;
+        height: 40px;
+        border: 0;
+        font-size: 1.5em;
+        position: relative;
+        border-radius: 15px;
+    }
+
+    .plus-btn span {
+        position: absolute;
+        transition: 300ms;
+        background: #000;
+        border-radius: 2px;
+    }
+
+    .plus-btn span:first-child {
+        top: 25%;
+        bottom: 25%;
+        width: 10%;
+        left: 45%;
+    }
+    .plus-btn span:last-child {
+        left: 25%;
+        right: 25%;
+        height: 10%;
+        top: 45%;
+    }
+
+      /* Morph the shape when the .plus-btn is hovered over */
+    .plus-btn.show span {
+        transform: rotate(90deg);
+    }
+
+    .plus-btn.show span:last-child {
+        left: 50%;
+        right: 50%;
+    }
+    .sss::after{
+        color: aqua;
+    }
+    .lg--bg-position{
+        background-position: 0px 205px;
+    }
+}
